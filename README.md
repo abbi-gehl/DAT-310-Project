@@ -12,5 +12,5 @@ Setup:
   ```
 
   ```bash
-  pip install mlcroissant 
+  pip install kagglehub 
   ```
