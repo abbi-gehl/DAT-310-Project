@@ -1,13 +1,8 @@
-import mlcroissant as mlc
-import pandas as pd
+import kagglehub
 
-# Fetch the Croissant JSON-LD
-croissant_dataset = mlc.Dataset('www.kaggle.com/datasets/prasad22/healthcare-dataset/croissant/download')
+# Download latest version
+path = kagglehub.dataset_download("prasad22/healthcare-dataset")
 
-# Check what record sets are in the dataset
-record_sets = croissant_dataset.metadata.record_sets
-print(record_sets)
+print("Path to dataset files:", path)
 
-# Fetch the records and put them in a DataFrame
-record_set_df = pd.DataFrame(croissant_dataset.records(record_set=record_sets[0].uuid))
-record_set_df.head()
+
