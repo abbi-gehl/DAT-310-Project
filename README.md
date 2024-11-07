@@ -10,3 +10,7 @@ Setup:
   ```bash
   pip install ucimlrepo
   ```
+
+  ```bash
+  pip install mlcroissant 
+  ```
